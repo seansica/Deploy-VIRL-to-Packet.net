@@ -1,0 +1,17 @@
+---
+# Filename: remove_packet_host.yml
+
+#Purpose: Delete 'VIRL' server from Packet.net Cloud
+
+- name: Delete VIRL server
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+
+  -  packet_device:
+        project_id: 02b993d3-7056-45a2-92c0-f7b08028d841
+        hostnames: virl
+        state: absent
+
+...
