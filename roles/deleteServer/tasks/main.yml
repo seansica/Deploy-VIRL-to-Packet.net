@@ -1,0 +1,11 @@
+---
+# Filename: remove_packet_host.yml
+
+#Purpose: Delete 'VIRL' server from Packet.net Cloud
+
+-  packet_device:
+      project_id: "{{ vault_projectid }}"
+      hostnames: virl
+      state: absent
+
+...

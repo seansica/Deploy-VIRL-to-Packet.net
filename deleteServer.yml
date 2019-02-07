@@ -1,0 +1,12 @@
+---
+
+- name: Delete VIRL server
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+
+  - include_role:
+      name: deleteServer
+
+...

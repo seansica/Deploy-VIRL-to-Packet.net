@@ -1,0 +1,23 @@
+---
+# Filename: create_packet_host.yml
+
+#Purpose: Auto-generate new 'VIRL' server in Packet.net Cloud
+
+-  packet_device:
+      project_id: "{{ vault_projectid }}"
+      hostnames: virl
+      operating_system: custom_ipxe
+      plan: baremetal_0
+      facility: ewr1
+      wait_timeout: 300
+      user_data: |
+                #!ipxe
+                ipxe_script_url: http://packet.virl.info
+                #cloud-config
+                license_file: "{{ vault_licensefile }}"
+                license_pem: "{{ vault_licensepem }}"
+                uwm_password: password
+                guest_password: guest
+                virl_password: VIRL
+
+...
