@@ -11,16 +11,16 @@ This project was created to simplify the creation and deletion of VIRL servers i
    - roles/deleteServer/vars/main.yml
 ---
 ## Template: roles/createServer/vars/main.yml
-vault_projectid: 00000000-0000-0000-0000-000000000000
+    vault_projectid: 00000000-0000-0000-0000-000000000000
 
-vault_licensefile: some-license-prefix.virl.info.pem
+    vault_licensefile: some-license-prefix.virl.info.pem
 
-vault_licensepem: |
-              -----BEGIN RSA PRIVATE KEY-----
+    vault_licensepem: |
+                      -----BEGIN RSA PRIVATE KEY-----
 
-              PEM_FILE_CONTENTS_HERE
+                      PEM_RUBBISH_HERE
 
-              -----END RSA PRIVATE KEY-----
+                      -----END RSA PRIVATE KEY-----
 ---
 ## Template: roles/deleteServer/vars/main.yml
 vault_projectid: 00000000-0000-0000-0000-000000000000
