@@ -11,7 +11,6 @@ This project was created to simplify the creation and deletion of VIRL servers i
    - roles/deleteServer/vars/main.yml
 ---
 ## Template: roles/createServer/vars/main.yml
-'''
 vault_projectid: 00000000-0000-0000-0000-000000000000
 
 vault_licensefile: some-license-prefix.virl.info.pem
@@ -25,14 +24,10 @@ vault_licensepem: |
 ---
 ## Template: roles/deleteServer/vars/main.yml
 vault_projectid: 00000000-0000-0000-0000-000000000000
-
-
 ---
 ## Execution Steps
 1. To create your VIRL server
    ansible-playbook --ask-vault-pass createServer.yml
 2. To create your VIRL server
    ansible-playbook --ask-vault-pass deleteServer.yml
-
-
 ---
