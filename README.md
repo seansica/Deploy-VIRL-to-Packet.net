@@ -31,7 +31,9 @@ This project was created to simplify the creation and deletion of VIRL servers i
 
 ## Execution Steps
 1. To create your VIRL server
+
     ansible-playbook --ask-vault-pass createServer.yml
 2. To create your VIRL server
+
     ansible-playbook --ask-vault-pass deleteServer.yml
 ---
